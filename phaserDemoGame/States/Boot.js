@@ -27,6 +27,7 @@ var SpaceAdventures;
             this.game.load.image("BackToMainMenu", "Imgs/MainMenu.png");
             this.game.load.image("ExitGame", "Imgs/exitGame.png");
             this.game.load.image("Score", "Imgs/scoreImage.png");
+            this.game.load.image("MaxScore", "Imgs/maxScore.png");
         };
         Boot.prototype.create = function () {
             this.game.scale.scaleMode = Phaser.ScaleManager.NO_SCALE;

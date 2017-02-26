@@ -19,6 +19,7 @@ module SpaceAdventures {
             this.game.load.image("BackToMainMenu", "Imgs/MainMenu.png");
             this.game.load.image("ExitGame", "Imgs/exitGame.png");
             this.game.load.image("Score", "Imgs/scoreImage.png");
+            this.game.load.image("MaxScore", "Imgs/maxScore.png");
         }
 
         create(){

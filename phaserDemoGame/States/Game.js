@@ -73,6 +73,17 @@ var SpaceAdventures;
             if (this.player.lives.countLiving() < 1) {
                 player.kill();
                 this.player.bullets = [];
+                var maximumScore = localStorage.getItem("maxScore");
+                if (maximumScore === null) {
+                    localStorage.setItem("maxScore", this.score.toString());
+                    maximumScore = this.score.toString();
+                }
+                else {
+                    if (parseInt(maximumScore) <= this.score) {
+                        maximumScore = this.score.toString();
+                        localStorage.setItem("maxScore", this.score.toString());
+                    }
+                }
                 this.game.state.start("GameOver", false, false, this.score);
             }
             // }
